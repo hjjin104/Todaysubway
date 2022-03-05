@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 서브웨이</title>
+    <link rel="stylesheet" href="./Home.css" />
+  </head>
+  <body>
+    <img id="logo" src="./img/로고.png" />
+
+
+    <div id="menu-bar">
+      <button id="MakeList">나만의 조합 만들기</button>
+
+
+      <div class="tab">
+        <button class="ByOrder active" onclick="openTab(event, 'tab1')">
+          인기순
+        </button>
+        <button class="ByOrder" onclick="openTab(event, 'tab2')">
+          최신순
+        </button>
+      </div>
+      
+      <div id="tab1" class="tabcontent" style="display: block;"> 탭1 내용</div>
+      <div id="tab2" class="tabcontent" style="display: none;"> 탭2 내용</div>
+    </div>
+    <script src="./Home.js"></script>
+  </body>
+  </body>
+</html>
