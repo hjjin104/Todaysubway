@@ -1,0 +1,80 @@
+body {
+  background-image: url(./img/배경지.png);
+  margin: 0px 0px;
+}
+
+hr {
+  margin: 0px;
+}
+/* 로고 사이즈 */
+#logo {
+  display: block;
+  width: 40%;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  background-position: center;
+  margin: auto;
+}
+/* 메뉴판 */
+#menu-bar {
+  border: 3px solid rgb(255, 202, 8);
+  border-radius: 20px;
+  background-color: white;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 1500px;
+  text-align: center;
+}
+
+.sandwich-menu {
+  border-radius: 20px;
+  width: 400px;
+  height: 300px;
+}
+.tab {
+  width: 100%;
+  height: 50px;
+}
+
+.menu-btn {
+  float: left;
+  width: 25%;
+  height: 100%;
+  border: none;
+  margin-top: 20px;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(0, 153, 71);
+}
+
+.menu-btn.active {
+  color: #000;
+  background-color: rgb(255, 202, 8);
+}
+.tab-img {
+  display: inline-block;
+  border: 1px solid black;
+  width: 450px;
+  margin: 20px 10px;
+  padding-top: 0px;
+}
+/* 샌드위치 이미지 사이즈 */
+.sandwich-img {
+  width: 450px;
+  height: 250px;
+}
+/* 이미지 MouseOver */
+.firstimg img:last-child {
+  display: none;
+}
+.firstimg:hover img:first-child {
+  display: none;
+}
+.firstimg:hover img:last-child {
+  display: inline-block;
+  animation-delay: 3000s;
+}
