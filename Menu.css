@@ -1,5 +1,6 @@
 body {
   background-image: url(./img/배경지.png);
+  background-repeat: repeat;
   margin: 0px 0px;
 }
 
@@ -7,15 +8,20 @@ hr {
   margin: 0px;
 }
 /* 로고 사이즈 */
+.logo-div {
+  background-color: white;
+}
 #logo {
   display: block;
-  width: 40%;
-  height: 300px;
+  width: 100vw;
+  height: 30vw;
   background-color: white;
   border-radius: 20px;
   background-position: center;
   margin: auto;
+  cursor: pointer;
 }
+
 /* 메뉴판 */
 #menu-bar {
   border: 3px solid rgb(255, 202, 8);
@@ -26,6 +32,7 @@ hr {
   margin-top: 20px;
   width: 1500px;
   text-align: center;
+  position: relative;
 }
 
 .sandwich-menu {
@@ -34,6 +41,7 @@ hr {
   height: 300px;
 }
 .tab {
+  margin-top: 30px;
   width: 100%;
   height: 50px;
 }
@@ -57,24 +65,92 @@ hr {
 }
 .tab-img {
   display: inline-block;
-  border: 1px solid black;
+  border: 3px solid black;
   width: 450px;
   margin: 20px 10px;
   padding-top: 0px;
 }
 /* 샌드위치 이미지 사이즈 */
 .sandwich-img {
+  border-radius: 20px;
   width: 450px;
-  height: 250px;
+  height: 258px;
+  margin-bottom: 0px;
 }
 /* 이미지 MouseOver */
+.firstimg {
+  width: 450px;
+  height: 258px;
+}
 .firstimg img:last-child {
   display: none;
 }
 .firstimg:hover img:first-child {
   display: none;
 }
+
 .firstimg:hover img:last-child {
   display: inline-block;
-  animation-delay: 3000s;
 }
+
+/* Menu , Bread , Cheese , Sauce (MouseOver시 색 변경) */
+.select {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 153, 71);
+  color: rgb(255, 202, 8);
+  font-size: 20px;
+  border-top: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  cursor: pointer;
+}
+.select:hover {
+  background-color: rgb(255, 202, 8);
+  color: rgb(0, 153, 71);
+}
+/* Bread MouseOver 색 변경 */
+.select2 {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 153, 71);
+  color: rgb(255, 202, 8);
+  font-size: 20px;
+  border-top: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  cursor: pointer;
+}
+.select2:hover {
+  background-color: rgb(255, 202, 8);
+  color: rgb(0, 153, 71);
+}
+/* Cheese MouseOver 색 변경 */
+.select3 {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 153, 71);
+  color: rgb(255, 202, 8);
+  font-size: 20px;
+  border-top: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  cursor: pointer;
+}
+.select3:hover {
+  background-color: rgb(255, 202, 8);
+  color: rgb(0, 153, 71);
+}
+
+.SandWichSelect {
+  background: red;
+  border: 3px solid red;
+}
+.breadselect {
+  background: orange;
+  border: 3px solid red;
+}
+/* 반응형 position relative 자식 position absolute */

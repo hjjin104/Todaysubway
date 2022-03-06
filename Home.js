@@ -1,3 +1,5 @@
+// 메뉴 선택 상자
+
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,8 +13,3 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-let delay = document.getElementsByClassName("firstimg");
-
-delay.setTimeout(function () {
-  console.log(0000);
-}, 3000);
