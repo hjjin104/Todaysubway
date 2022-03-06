@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Menu.css" />
+  </head>
+  <body>
+    <img id="logo" src="./img/로고.png" />
+
+    <div id="menu-bar">
+      <!-- 버튼 -->
+      <div class="tab">
+        <button class="menu-btn active" onclick="openTab(event, 'tab1')">
+          샌드위치
+        </button>
+        <button class="menu-btn" onclick="openTab(event, 'tab2')">빵</button>
+        <button class="menu-btn" onclick="openTab(event, 'tab3')">치즈</button>
+        <button class="menu-btn" onclick="openTab(event, 'tab4')">소스</button>
+      </div>
+
+      <!-- 리스트 -->
+      <!-- 샌드위치 -->
+      <div id="tab1" class="tabcontent" style="display: block">
+        <div class="tab-img">
+          <div class="firstimg" onmouseover="delay()">
+            <img class="sandwich-img" src="./img/에그마요.png" />
+            <img class="sandwich-img" src="./img/로스트 치킨.png" />
+          </div>
+          <hr />
+          <p>에그마요</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/이탈리안 비엠티.png" />
+          <hr />
+          <p>이탈리안 B.M.T</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/비엘티.png" />
+          <hr />
+          <p>B.L.T</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/미트볼.png" />
+          <hr />
+          <p>미트볼</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/햄.png" />
+          <hr />
+          <p>햄</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/참치.png" />
+          <hr />
+          <p>참치</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/로스트 치킨.png" />
+          <hr />
+          <p>로스트 치킨</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/로티세리.png" />
+          <hr />
+          <p>로티세리 바비큐 치킨</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/서브웨이 클럽.png" />
+          <hr />
+          <p>서브웨이 클럽</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/터키.png" />
+          <hr />
+          <p>터키</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/베지.png" />
+          <hr />
+          <p>베지</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/쉬림프.png" />
+          <hr />
+          <p>쉬림프</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/k-바비큐.png" />
+          <hr />
+          <p>K - 바비큐</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/풀드 포크.png" />
+          <hr />
+          <p>풀드 포크 바비큐</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/스테이크 & 치즈.png" />
+          <hr />
+          <p>스테이크 & 치즈</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/터키베이컨아보카도.png" />
+          <hr />
+          <p>터키 베이컨 아보카토</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/스파이시이탈리안.png" />
+          <hr />
+          <p>스파이시 이탈리안</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/치킨 데리야끼.png" />
+          <hr />
+          <p>치킨 데리야끼</p>
+        </div>
+      </div>
+
+      <!-- 빵 -->
+      <div id="tab2" class="tabcontent" style="display: none">
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/bread/화이트.png" />
+          <hr />
+          <p>화이트</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/bread/위트.png" />
+          <hr />
+          <p>위트</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/bread/하티.png" />
+          <hr />
+          <p>하티</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/bread/파마산 오레가노.png" />
+          <hr />
+          <p>파마산 오레가노</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/bread/허니오트.png" />
+          <hr />
+          <p>허니오트</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/bread/플랫브레드.png" />
+          <hr />
+          <p>플랫브레드</p>
+        </div>
+      </div>
+      <!-- 치즈 -->
+      <div id="tab3" class="tabcontent" style="display: none">
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/chse/아메리칸 치즈.png" />
+          <hr />
+          <p>아메리칸 치즈</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/chse/슈레드 치즈.png" />
+          <hr />
+          <p>슈레드 치즈</p>
+        </div>
+
+        <div class="tab-img">
+          <img class="sandwich-img" src="./img/chse/모짜렐라 치즈.png" />
+          <hr />
+          <p>모짜렐라 치즈</p>
+        </div>
+      </div>
+      <!-- 소스 -->
+      <div id="tab4" class="tabcontent" style="display: none">탭2 내용</div>
+    </div>
+    <script src="./Menu.js"></script>
+  </body>
+</html>
